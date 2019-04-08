@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: cucumberTest.CucumberRunnerTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 4.632 sec <<< FAILURE!
+And the following transactions are tagged as needs review(Scenario: Foreign Transactions over $100 needs review)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at cucumberTest.TransactionRulesStepDefinition.lambda$null$9(TransactionRulesStepDefinition.java:88)
+	at ✽.And the following transactions are tagged as needs review(transactionReview.feature:12)
+
+Scenario: Foreign Transactions over $100 needs review  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at cucumberTest.TransactionRulesStepDefinition.lambda$null$9(TransactionRulesStepDefinition.java:88)
+	at ✽.And the following transactions are tagged as needs review(transactionReview.feature:12)
+

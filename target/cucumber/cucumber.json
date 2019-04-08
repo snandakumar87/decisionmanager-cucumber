@@ -1,0 +1,349 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7357393734,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LambdaGlueBase.java:16"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Foreign Transactions over $100 needs review",
+        "description": "",
+        "id": "transaction-analysis;foreign-transactions-over-$100-needs-review",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 106751019,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "a transaction exists with",
+            "match": {
+              "location": "TransactionRulesStepDefinition.java:32"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "transactionRefNum",
+                  "foreignCurrencyTransaction",
+                  "transactionAmount"
+                ],
+                "line": 5
+              },
+              {
+                "cells": [
+                  "12345",
+                  "true",
+                  "250.00"
+                ],
+                "line": 6
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 73917619,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "rules get fired",
+            "match": {
+              "location": "TransactionRulesStepDefinition.java:51"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4231720,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "atleast \u00271\u0027 rule is executed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 9
+                }
+              ],
+              "location": "TransactionRulesStepDefinition.java:55"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1668435,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "rules are fired",
+            "match": {
+              "location": "TransactionRulesStepDefinition.java:59"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "TransactionRule"
+                ],
+                "line": 11
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5530527,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the following transactions are tagged as needs review",
+            "match": {
+              "location": "TransactionRulesStepDefinition.java:65"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "transactionRefNum",
+                  "needsReview",
+                  "secondLevelApprovalRequired"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "12345",
+                  "true",
+                  "false"
+                ],
+                "line": 14
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2429793137,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LambdaGlueBase.java:16"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Transactions over $1000 needs review",
+        "description": "",
+        "id": "transaction-analysis;transactions-over-$1000-needs-review",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 54067,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "a transaction exists with",
+            "match": {
+              "location": "TransactionRulesStepDefinition.java:32"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "transactionRefNum",
+                  "foreignCurrencyTransaction",
+                  "transactionAmount"
+                ],
+                "line": 18
+              },
+              {
+                "cells": [
+                  "34545",
+                  "false",
+                  "1250.00"
+                ],
+                "line": 19
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 28897130,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "rules get fired",
+            "match": {
+              "location": "TransactionRulesStepDefinition.java:51"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 70770,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "atleast \u00271\u0027 rule is executed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 9
+                }
+              ],
+              "location": "TransactionRulesStepDefinition.java:55"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 33623,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "rules are fired",
+            "match": {
+              "location": "TransactionRulesStepDefinition.java:59"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "LargeTransactions"
+                ],
+                "line": 24
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 59518,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "the following transactions are tagged as needs review",
+            "match": {
+              "location": "TransactionRulesStepDefinition.java:65"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "transactionRefNum",
+                  "needsReview",
+                  "secondLevelApprovalRequired"
+                ],
+                "line": 26
+              },
+              {
+                "cells": [
+                  "34545",
+                  "true",
+                  "true"
+                ],
+                "line": 27
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1623660276,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LambdaGlueBase.java:16"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "Transactions less than $1000 and is not foreign does not need review",
+        "description": "",
+        "id": "transaction-analysis;transactions-less-than-$1000-and-is-not-foreign-does-not-need-review",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 246348,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "a transaction exists with",
+            "match": {
+              "location": "TransactionRulesStepDefinition.java:32"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "transactionRefNum",
+                  "foreignCurrencyTransaction",
+                  "transactionAmount"
+                ],
+                "line": 31
+              },
+              {
+                "cells": [
+                  "34545",
+                  "false",
+                  "1250.00"
+                ],
+                "line": 32
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 25125745,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "rules get fired",
+            "match": {
+              "location": "TransactionRulesStepDefinition.java:51"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 28852,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "no rules are fired",
+            "match": {
+              "location": "TransactionRulesStepDefinition.java:98"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Transaction Analysis",
+    "description": "",
+    "id": "transaction-analysis",
+    "keyword": "Feature",
+    "uri": "transactionReview.feature"
+  }
+]
