@@ -82,9 +82,9 @@ Scenario: Foreign Transactions over $100 needs review
    
    The cucumber report now shows the failures to BAU, as the rules have changed.
    
-   ![cucumber report failure1]https://github.com/snandakumar87/decisionmanager-cucumber/blob/master/test_failure_cucumber.png
+   ![cucumber report failure1](https://github.com/snandakumar87/decisionmanager-cucumber/blob/master/test_failure_cucumber.png)
   
-   ![cucumber report failure2]https://github.com/snandakumar87/decisionmanager-cucumber/blob/master/cucumber_scenario_failure.png
+   ![cucumber report failure2](https://github.com/snandakumar87/decisionmanager-cucumber/blob/master/cucumber_scenario_failure.png)
    
    Cucumber based testing, can also come handy when performing tests against versions of the Rule artifact, it can give a side by side view of the execution when pointing to two different versions.
 
