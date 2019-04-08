@@ -73,5 +73,19 @@ Scenario: Foreign Transactions over $100 needs review
    
    Succesful run, produces the following reports.
    
+   ![Cucumber Reports](https://github.com/snandakumar87/decisionmanager-cucumber/blob/master/cucumber_report.png)![Cucumber Reports](https://github.com/snandakumar87/decisionmanager-cucumber/blob/master/Cucumber_feature.png)![Cucumber Reports](https://github.com/snandakumar87/decisionmanager-cucumber/blob/master/Cucumber_stats.png)
    
+   Let us now change a rule, lets change the "needs Review" condition to $500, build and deploy the latest rule package.
+   And re-run the cucumber tests.
+   
+   ![Changed Rule](https://github.com/snandakumar87/decisionmanager-cucumber/blob/master/changed_rule.png)
+   
+   The cucumber report now shows the failures to BAU, as the rules have changed.
+   
+   ![cucumber report failure1]https://github.com/snandakumar87/decisionmanager-cucumber/blob/master/test_failure_cucumber.png
+  
+   ![cucumber report failure2]https://github.com/snandakumar87/decisionmanager-cucumber/blob/master/cucumber_scenario_failure.png
+   
+   Cucumber based testing, can also come handy when performing tests against versions of the Rule artifact, it can give a side by side view of the execution when pointing to two different versions.
+
    
